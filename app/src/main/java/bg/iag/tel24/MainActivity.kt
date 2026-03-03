@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var b: ActivityMainBinding
 
-    private val tabs = listOf("ИАГ", "РДГ", "ДП", "Търси", "Относно")
+    private val tabs = listOf("ИАГ", "РДГ", "ДП", "Търси")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

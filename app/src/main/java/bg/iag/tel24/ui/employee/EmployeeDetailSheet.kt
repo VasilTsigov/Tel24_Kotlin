@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import coil.load
-import coil.transform.CircleCropTransformation
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.gson.Gson
 import bg.iag.tel24.R
@@ -46,7 +45,11 @@ class EmployeeDetailSheet : BottomSheetDialogFragment() {
         b.ivPhoto.load(node.imageUrl) {
             placeholder(R.drawable.ic_person_placeholder)
             error(R.drawable.ic_person_placeholder)
-            transformations(CircleCropTransformation())
+            transformations(FaceCircleCropTransformation())
+        }
+
+        b.ivPhoto.setOnClickListener {
+            node.imageUrl?.let { url -> PhotoViewerDialog.show(childFragmentManager, url) }
         }
 
         b.btnCall.setOnClickListener {
