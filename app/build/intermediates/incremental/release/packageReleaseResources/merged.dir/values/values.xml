@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="primary">#1F6FEB</color>
+    <color name="primary_dark">#1557C0</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Тел24 ИАГ</string>
+    <string name="search_hint">Търси: Иван Иванов или 0888123456</string>
+    <style name="Theme.Tel24" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+    </style>
+</resources>

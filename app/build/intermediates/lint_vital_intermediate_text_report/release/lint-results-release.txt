@@ -1,0 +1,29 @@
+C:\Users\vtsig\Tel24Android\app\src\main\java\bg\iag\tel24\ui\search\SearchViewModel.kt:59: Error: Expected non-nullable value [NullSafeMutableLiveData from androidx.lifecycle]
+                is Result.Success -> _results.value = result.data
+                                                      ~~~~~~~~~~~
+C:\Users\vtsig\Tel24Android\app\src\main\java\bg\iag\tel24\ui\search\SearchViewModel.kt:64: Error: Expected non-nullable value [NullSafeMutableLiveData from androidx.lifecycle]
+                        _results.value = cached
+                                         ~~~~~~
+C:\Users\vtsig\Tel24Android\app\src\main\java\bg\iag\tel24\ui\tree\TreeViewModel.kt:43: Error: Expected non-nullable value [NullSafeMutableLiveData from androidx.lifecycle]
+                    _items.value = result.data
+                                   ~~~~~~~~~~~
+C:\Users\vtsig\Tel24Android\app\src\main\java\bg\iag\tel24\ui\tree\TreeViewModel.kt:50: Error: Expected non-nullable value [NullSafeMutableLiveData from androidx.lifecycle]
+                        _items.value   = cached
+                                         ~~~~~~
+
+   Explanation for issues of type "NullSafeMutableLiveData":
+   This check ensures that LiveData values are not null when explicitly       
+            declared as non-nullable.
+
+                   Kotlin interoperability does not support enforcing explicit
+   null-safety when using                 generic Java type parameters. Since
+   LiveData is a Java class its value can always                 be null even
+   when its type is explicitly declared as non-nullable. This can lead        
+           to runtime exceptions from reading a null LiveData value that is
+   assumed to be                 non-nullable.
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.lifecycle
+   Feedback: https://issuetracker.google.com/issues/new?component=413132
+
+4 errors, 0 warnings

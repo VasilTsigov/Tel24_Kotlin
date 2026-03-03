@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Тел24 ИАГ</string>
+    <string name="search_hint">Търси: Иван Иванов или 0888123456</string>
+</resources>

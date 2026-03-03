@@ -1,0 +1,5 @@
+-keep class bg.iag.tel24.data.model.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn okhttp3.**
+-dontwarn retrofit2.**

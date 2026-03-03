@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-mergeDebugResources-43:\\layout\\fragment_about.xml",
+        "source": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-main-46:\\layout\\fragment_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-mergeDebugResources-43:\\layout\\item_department.xml",
+        "source": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-main-46:\\layout\\item_department.xml"
+    },
+    {
+        "merged": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-mergeDebugResources-43:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-main-46:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "bg.iag.tel24.app-mergeDebugResources-43:/layout/item_employee.xml",
+        "source": "bg.iag.tel24.app-main-46:/layout/item_employee.xml"
+    },
+    {
+        "merged": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-mergeDebugResources-43:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-main-46:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "bg.iag.tel24.app-mergeDebugResources-43:/layout/item_department.xml",
+        "source": "bg.iag.tel24.app-main-46:/layout/item_department.xml"
+    },
+    {
+        "merged": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-mergeDebugResources-43:\\layout\\bottom_sheet_employee.xml",
+        "source": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-main-46:\\layout\\bottom_sheet_employee.xml"
+    },
+    {
+        "merged": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-mergeDebugResources-43:\\layout\\item_employee.xml",
+        "source": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-main-46:\\layout\\item_employee.xml"
+    },
+    {
+        "merged": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-mergeDebugResources-43:\\layout\\fragment_tree.xml",
+        "source": "C:\\Users\\vtsig\\.gradle\\daemon\\7.5\\bg.iag.tel24.app-main-46:\\layout\\fragment_tree.xml"
+    }
+]
