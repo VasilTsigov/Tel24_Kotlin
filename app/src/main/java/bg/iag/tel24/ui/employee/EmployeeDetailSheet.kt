@@ -2,6 +2,7 @@ package bg.iag.tel24.ui.employee
 
 import android.content.Intent
 import android.net.Uri
+import android.provider.ContactsContract
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -52,6 +53,14 @@ class EmployeeDetailSheet : BottomSheetDialogFragment() {
             node.imageUrl?.let { url -> PhotoViewerDialog.show(childFragmentManager, url) }
         }
 
+        val hasPhone = !node.gsm.isNullOrBlank() && !node.gsm.startsWith("Няма")
+        val hasEmail = !node.email.isNullOrBlank() && !node.email.startsWith("Няма")
+
+        b.btnCall.isEnabled = hasPhone
+        b.btnSms.isEnabled = hasPhone
+        b.btnEmail.isEnabled = hasEmail
+        b.btnAddContact.isEnabled = hasPhone || hasEmail
+
         b.btnCall.setOnClickListener {
             startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:${node.gsm}")))
         }
@@ -60,6 +69,17 @@ class EmployeeDetailSheet : BottomSheetDialogFragment() {
         }
         b.btnEmail.setOnClickListener {
             startActivity(Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:${node.email}")))
+        }
+        b.btnAddContact.setOnClickListener {
+            val intent = Intent(ContactsContract.Intents.Insert.ACTION).apply {
+                type = ContactsContract.RawContacts.CONTENT_TYPE
+                putExtra(ContactsContract.Intents.Insert.NAME,      node.text)
+                putExtra(ContactsContract.Intents.Insert.PHONE,     node.gsm)
+                putExtra(ContactsContract.Intents.Insert.EMAIL,     node.email)
+                putExtra(ContactsContract.Intents.Insert.JOB_TITLE, node.dlag)
+                putExtra(ContactsContract.Intents.Insert.COMPANY,   node.pod)
+            }
+            startActivity(intent)
         }
     }
 

@@ -21,6 +21,16 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="Търсете по име и фамилия — напр. &quot;ив пе&quot; за Иван Петров. Колкото повече букви, толкова по-прецизно е филтрирането."
+        android:textSize="13sp"
+        android:textColor="#888888" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"

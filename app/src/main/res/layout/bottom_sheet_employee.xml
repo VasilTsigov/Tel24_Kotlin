@@ -117,12 +117,29 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
             app:icon="@drawable/ic_email"
             app:iconSize="28dp"
             app:iconPadding="0dp"
             app:iconGravity="textStart"
             app:backgroundTint="#F44336"
             android:contentDescription="Имейл" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddContact"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text=""
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginStart="4dp"
+            app:icon="@drawable/ic_person_add"
+            app:iconSize="28dp"
+            app:iconPadding="0dp"
+            app:iconGravity="textStart"
+            app:backgroundTint="#FF9800"
+            android:contentDescription="Добави контакт" />
 
     </LinearLayout>
 </LinearLayout>
